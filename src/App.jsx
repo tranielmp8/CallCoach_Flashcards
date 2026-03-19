@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { useAuth } from "./context/AuthContext";
 import { LoginPage } from "./pages/LoginPage";
+import { RegisterPage } from "./pages/RegisterPage";
 import { AdminPage } from "./pages/AdminPage";
 import { PublicPage } from "./pages/PublicPage";
 
@@ -16,6 +17,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<PublicPage />} />
       <Route path="/admin/login" element={<LoginPage />} />
+      <Route path="/admin/register" element={<RegisterPage />} />
       <Route
         path="/admin"
         element={

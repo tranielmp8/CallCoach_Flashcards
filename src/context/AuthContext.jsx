@@ -26,12 +26,16 @@ export function AuthProvider({ children }) {
     return supabase.auth.signInWithPassword({ email, password });
   }
 
+  async function signUp(email, password) {
+    return supabase.auth.signUp({ email, password });
+  }
+
   async function signOut() {
     return supabase.auth.signOut();
   }
 
   return (
-    <AuthContext.Provider value={{ user, loading, signIn, signOut }}>
+    <AuthContext.Provider value={{ user, loading, signIn, signUp, signOut }}>
       {children}
     </AuthContext.Provider>
   );
