@@ -40,15 +40,19 @@ export function LoginPage() {
               className="inline-flex h-12 w-12 items-center justify-center rounded-2xl text-white text-xl font-bold mb-4"
               style={{ backgroundColor: deepTeal }}
             >
-              CC
+              CCI
             </div>
             <h1 className="text-2xl font-bold text-slate-900">Admin login</h1>
-            <p className="mt-1 text-sm text-slate-500">Sign in to manage your flashcard deck.</p>
+            <p className="mt-1 text-sm text-slate-500">
+              Sign in to manage your flashcard deck.
+            </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <label className="text-sm font-medium text-slate-700">Email</label>
+              <label className="text-sm font-medium text-slate-700">
+                Email
+              </label>
               <input
                 type="email"
                 value={email}
@@ -60,7 +64,9 @@ export function LoginPage() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-sm font-medium text-slate-700">Password</label>
+              <label className="text-sm font-medium text-slate-700">
+                Password
+              </label>
               <input
                 type="password"
                 value={password}
