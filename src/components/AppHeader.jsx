@@ -15,7 +15,7 @@ export function AppHeader({ totalCards, accuracy }) {
           </div>
           <div>
             <h1 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Study smarter with Edit, Play, and Quiz modes
+              Called Coach Me Mastery Study Cards
             </h1>
             <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600 sm:text-base">
               Build rich flashcards with questions, answers, apply prompts, reflection prompts, and
