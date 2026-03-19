@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { deepTeal } from "../constants/theme";
@@ -12,10 +12,11 @@ export function LoginPage() {
   const [loading, setLoading] = useState(false);
 
   // Already logged in — go straight to admin
-  if (user) {
-    navigate("/admin", { replace: true });
-    return null;
-  }
+  useEffect(() => {
+    if (user) {
+      navigate("/admin", { replace: true });
+    }
+  }, [user, navigate]);
 
   async function handleSubmit(e) {
     e.preventDefault();
