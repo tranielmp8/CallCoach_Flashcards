@@ -11,16 +11,18 @@ export function AppHeader({ totalCards, accuracy }) {
       <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
         <div className="space-y-3">
           <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 shadow-sm">
-            <Sparkles size={14} style={{ color: deepTeal }} /> Interactive Flashcard Study App
+            <Sparkles size={14} style={{ color: deepTeal }} /> Interactive
+            Flashcard Study App
           </div>
           <div>
             <h1 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Called Coach Me Mastery Study Cards
+              Called Coach Institute Study Cards
             </h1>
             <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600 sm:text-base">
-              Build rich flashcards with questions, answers, apply prompts, reflection prompts, and
-              optional images. Share a polished published experience with animated study cards and
-              instant-feedback quizzes.
+              Called Coach Institute study cards help prepare learners for the
+              Coaching Competency Exam by actively testing knowledge and
+              application. Each card builds confidence through practice, recall,
+              and reflection.
             </p>
           </div>
         </div>
